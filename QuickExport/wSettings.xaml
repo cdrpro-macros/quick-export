@@ -1,0 +1,78 @@
+﻿<Window x:Class="QuickExport.wSettings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="QuickExport Settings" Height="480" Width="280" ShowInTaskbar="False" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/QuickExport;component/Images/QuickExport.png">
+
+    <Window.Background>
+        <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+    </Window.Background>
+
+    <Grid Margin="16">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="28" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="28" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="90" />
+            <RowDefinition Height="26" />
+        </Grid.RowDefinitions>
+
+        <TextBox Name="tbGeneralFolder" Grid.Row="0" Height="22" VerticalAlignment="Top" Margin="0,0,50,0" IsEnabled="False" />
+        <Button Name="bDelFolder" ToolTip="Delete path" Content="x" Grid.Row="0" Height="22" Width="22" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0" Click="bDelFolder_Click" />
+        <Button Name="bSetFolder" ToolTip="Set path..." Content="..." Grid.Row="0" Height="22" Width="22" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,0,24,0" Click="bSetFolder_Click" />
+
+        <ComboBox Name="cbPresets" Grid.Row="1" Height="22" VerticalAlignment="Top" Margin="0,0,50,0" SelectionChanged="cbPresets_SelectionChanged" />
+        <Button Name="bDelPreset" ToolTip="Delete selected preset" Content="-" Grid.Row="1" Height="22" Width="22" VerticalAlignment="Top" HorizontalAlignment="Right" Click="bDelPreset_Click" />
+        <Button Name="bAddPreset" ToolTip="Add new preset" Content="+" Grid.Row="1" Height="22" Width="22" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,0,24,0" Click="bAddPreset_Click" />
+
+        <TextBlock Grid.Row="2" Padding="0,2,8,0" Width="74" HorizontalAlignment="Left" TextAlignment="Right" Text="File format:" />
+        <ComboBox Grid.Row="2" Name="cbFileFormat" Height="22" Width="80" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="74,0,0,0" SelectionChanged="cbFileFormat_SelectionChanged" />
+
+        <TextBlock Grid.Row="3" Padding="0,2,8,0" Width="74" HorizontalAlignment="Left" TextAlignment="Right" Text="Range:" />
+        <ComboBox Grid.Row="3" Name="cbRange" Height="22" VerticalAlignment="Top" Margin="74,0,0,0" />
+
+        <TextBlock Grid.Row="4" Padding="0,2,8,0" Width="74" HorizontalAlignment="Left" TextAlignment="Right" Text="Color mode:" />
+        <ComboBox Grid.Row="4" Name="cbColorMode" Height="22" VerticalAlignment="Top" Margin="74,0,0,0" SelectionChanged="cbColorMode_SelectionChanged" />
+
+        <CheckBox Grid.Row="5" Name="cbTransparency" Content="Transparency" Height="22" Width="100" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,0,0,0" />
+        <CheckBox Grid.Row="5" Name="cbOverprint" Content="Overprint black" Height="22" VerticalAlignment="Top" Margin="100,0,0,0" />
+
+        <TextBlock Grid.Row="6" Padding="0,2,8,0" Width="74" HorizontalAlignment="Left" TextAlignment="Right" Text="Quality:" />
+        <TextBox Name="tbQuality" Grid.Row="6" Height="22" Width="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="74,0,0,0" />
+        <TextBlock Grid.Row="6" Padding="0,2,8,0" Width="15" Margin="126,0,0,0" HorizontalAlignment="Left" Text="%" />
+        
+        <TextBlock Grid.Row="6" Padding="0,2,8,0" Text="Blur:" HorizontalAlignment="left" Margin="150,0,0,0" />
+        <TextBox Name="tbBlur" Grid.Row="6" Height="22" Width="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="180,0,0,0" />
+        <TextBlock Grid.Row="6" Padding="0,2,8,0" Width="15" Margin="232,0,0,0" HorizontalAlignment="Left" Text="%" />
+
+        <TextBlock Grid.Row="7" Padding="0,2,8,0" Width="74" HorizontalAlignment="Left" TextAlignment="Right" Text="Sub-format:" />
+        <ComboBox Grid.Row="7" Name="cbSubFormat" Height="22" VerticalAlignment="Top" Margin="74,0,0,0" />
+
+        <Grid Grid.Row="8">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="110" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" Orientation="Vertical" Margin="0,2,0,0" >
+                <CheckBox Name="cbAntiAliased" Content="Anti-aliased" Height="22" VerticalAlignment="Top" Margin="0,0,0,0" />
+                <CheckBox Name="cbProgressive" Content="Progressive" Height="22" VerticalAlignment="Top" Margin="0,0,0,0" Click="cbProgressive_Click" />
+                <CheckBox Name="cbOptimize" Content="Optimize" Height="22" VerticalAlignment="Top" Margin="0,0,0,0" Click="cbOptimize_Click" />
+                <CheckBox Name="cbInterlaced" Content="Interlaced" Height="22" VerticalAlignment="Top" Margin="0,0,0,0" />
+            </StackPanel>
+            <TextBlock Grid.Column="1" Padding="0,2,8,0" Width="74" HorizontalAlignment="Left" TextAlignment="Right" Text="Resolution:" />
+            <TextBox Name="tbDPI" Grid.Column="1" Height="22" Width="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="70,0,0,0" />
+        </Grid>
+        
+        <StackPanel Grid.Row="9" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Name="btnSave" Content="Save" ToolTip="Save changing to selected preset" Padding="14,0" Margin="6,0" Click="btnSave_Click" />
+            <Button Name="btnClose" Content="Close" ToolTip="Close window without saving" Padding="14,0" Click="btnClose_Click" />
+        </StackPanel>
+
+    </Grid>
+    
+</Window>

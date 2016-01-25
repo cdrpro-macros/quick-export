@@ -1,0 +1,15 @@
+﻿<Window x:Class="QuickExport.InputBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="InputBox" AllowsTransparency="True" WindowStyle="None" ShowInTaskbar="False" Background="Transparent" Height="100" Width="300" WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <Border BorderThickness="1" BorderBrush="Gray" CornerRadius="4" Background="#FFFFFF" />
+        <TextBlock Text="Input new name" VerticalAlignment="Top" Margin="10,10,10,0" TextAlignment="Center" />
+        <TextBox Name="newName" VerticalAlignment="Top" Margin="10,30,10,0" TextAlignment="Center" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,66,10,0">
+            <Button Name="OK" Content="Ok" Padding="10,1" Margin="0,0,3,0" Click="OK_Click" />
+            <Button Name="Cancel" Content="Cancel" Padding="10,1" Margin="3,0,0,0" Click="Cancel_Click" />
+        </StackPanel>
+    </Grid>
+</Window>
