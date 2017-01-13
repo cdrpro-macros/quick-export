@@ -21,9 +21,6 @@ namespace QuickExport
         public static string mWebSite = "http://cdrpro.ru";
         public static string mEmail = "sancho@cdrpro.ru";
 
-        private string _shTitle = "QuickExport #macro for #CorelDRAW";
-        private string _shUrl = "http://cdrpro.ru/";
-
         public static string sPath;
         public static string newName = "";
         

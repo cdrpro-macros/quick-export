@@ -38,7 +38,7 @@
     <Reference Include="Corel.Interop.VGCore, Version=15.2.0.695, Culture=neutral, PublicKeyToken=e4835428e22ad6f9, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>True</EmbedInteropTypes>
-      <HintPath>..\..\..\..\..\..\..\Program Files\Corel\CorelDRAW Graphics Suite X6\Programs64\Assemblies\Corel.Interop.VGCore.dll</HintPath>
+      <HintPath>C:\Program Files\Corel\CorelDRAW Graphics Suite X7\Programs64\Assemblies\Corel.Interop.VGCore.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Windows.Forms" />
