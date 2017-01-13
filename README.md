@@ -21,6 +21,11 @@ Files are saved in the folder of the document, or in 'My Documents' folder if th
 
 * EnglishUS
 
+## Documentation
+
+* [Build and Install](./docs/EN.md)
+* [Сборка и установка](./docs/RU.md)
+
 ## Help & contributing
 
 There is a lot of code and other macros I want to open for free.   
