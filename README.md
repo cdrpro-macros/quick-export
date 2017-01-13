@@ -26,6 +26,11 @@ Files are saved in the folder of the document, or in 'My Documents' folder if th
 * [Build and Install](./docs/EN.md)
 * [Сборка и установка](./docs/RU.md)
 
+#### Usage
+
+Left click opens Settings window where you can manage your presets.
+Right click on macro's icon opens context menu where you can run your presets.
+
 ## Help & contributing
 
 There is a lot of code and other macros I want to open for free.   
