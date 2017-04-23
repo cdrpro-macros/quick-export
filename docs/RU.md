@@ -13,15 +13,15 @@
 
 Необходимые файлы можно скопировать вручную, без необходимости создания установщика:
 
-1. Скопируйте макрос _\QuickExport\bin\Release/QuickExport.dll_ в _C:\Program Files\Corel\CorelDRAW Graphics Suite X7\Programs64\Addons\QuickExport_ (вам нужно будет создать эту папку);
-1. Скопируйте установщик _\installer\QuickExportInstaller.gms_ в _C:\Users\%your_user%\AppData\Roaming\Corel\CorelDRAW Graphics Suite X7\Draw\GMS_.
+1. Скопируйте макрос _.\bin\Release\QuickExport.dll_ в _C:\Program Files\Corel\CorelDRAW Graphics Suite X7\Programs64\Addons\QuickExport_ (вам нужно будет создать эту папку);
+1. Скопируйте установщик _.\installer\QuickExportInstaller.gms_ в _C:\Users\\%your_user%\AppData\Roaming\Corel\CorelDRAW Graphics Suite X7\Draw\GMS_.
 
 ## Создание установщика
 
 Или можно создать установщик для более простой установки:
 
 1. Скачайте и установите [Nullsoft Scriptable Install System](http://nsis.sourceforge.net/Main_Page);
-1. Скопируйте _\bin\Release/QuickExport.dll_ в папку _\installer\_;
+1. Скопируйте _.\bin\Release\QuickExport.dll_ в папку _.\installer_;
 1. Через контекстное меню файла _*.nsi_ выбирите команду _Compile NSIS Script_.
 
 После этого, вы сможете установить макрос с помощью созданного _*.exe_ файла.
