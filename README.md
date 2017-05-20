@@ -1,40 +1,21 @@
 # QuickExport
 
-This is a source code of QuickExport.
-
-## About QuickExport
-
 Easy 2-click export to jpeg or png. Supports export as selections as all pages. 
 Files are saved in the folder of the document, or in 'My Documents' folder if the document isn't yet saved, or custom folder.
 
-#### Screenshots
-
 ![QuickExport macro](./screenshots/qexport1.png)
 ![QuickExport macro](./screenshots/qexport2.png)
-
-#### Compatibility
-
-* CorelDRAW X7
-* CorelDRAW X6
-
-#### Localisation
-
-* EnglishUS
-
-## Documentation
-
-* [Build and Install](./docs/EN.md)
-* [Сборка и установка](./docs/RU.md)
 
 #### Usage
 
 Left click opens Settings window where you can manage your presets.
 Right click on macro's icon opens context menu where you can run your presets.
 
-## Help & contributing
+## Tech Specs
 
-There is a lot of code and other macros I want to open for free.   
-If you know VBA or C# and want to help, please contact me here or in [twitter](https://twitter.com/SanichKotikov).
+* Compatibility: CorelDRAW X6+;
+* Localisation: EnglishUS;
+* [How to build and install](https://github.com/cdrpro-macros/build-and-Install-csharp-macros).
 
 ## License
 
